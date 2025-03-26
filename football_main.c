@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "football.h" //include this to use print_combinations func
+#include "football.h" //include this to use print_combinations and count_combinations
 
 int main() {
     int score;
@@ -19,7 +19,9 @@ int main() {
             break;  //break if score is 0 or 1
         }
 
-        print_combinations(score); //call the function that prints all possible combinations
+        printf("\nPossible combinations of scoring plays if a team's score is %d:\n", score);
+        print_combinations(score);  // Use the new function to print combinations
+        printf("\n");  //spacing between entries
     }
 
     printf("Exiting... \n");
