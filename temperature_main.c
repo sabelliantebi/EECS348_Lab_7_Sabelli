@@ -44,23 +44,23 @@ int main() {
     float in_celsius;
 
     if (from == 'C' && to == 'F') { //handle all possible conversions
-        result = c_to_f(input_temp); //call func c_to_f to perform the cnversion from celsius to farenheit 
+        result = celsius_to_fahrenheit(input_temp); //call func celsius_to_farenheit to perform the cnversion from celsius to farenheit 
         in_celsius = input_temp; //already in celsius no need to convert
     } else if (from == 'C' && to == 'K') {
-        result = c_to_k(input_temp); //call func c_to_k to perform the cnversion from celsius to kevin
+        result = celsius_to_kelvin(input_temp); //call func celsius_to_kelvin to perform the cnversion from celsius to kevin
         in_celsius = input_temp; //still inn celsius 
     } else if (from == 'F' && to == 'C') {
-        result = f_to_c(input_temp); //call func f_to_c to perform the cnversion from farenheit to celsius 
+        result = fahrenheit_to_celsius(input_temp); //call func farenheit_to_celsius to perform the cnversion from farenheit to celsius 
         in_celsius = result; //store the result 
     } else if (from == 'F' && to == 'K') {
-        result = f_to_k(input_temp);  //call func f_to_k to perform the cnversion from farenheit to kelvin
-        in_celsius = f_to_c(input_temp); //get val in celsius
+        result = fahrenheit_to_kelvin(input_temp);  //call func farenheit_to_kelvin to perform the cnversion from farenheit to kelvin
+        in_celsius = fahrenheit_to_celsius(input_temp); //get val in celsius
     } else if (from == 'K' && to == 'C') {
-        result = k_to_c(input_temp); //call func k_to_c to perform the cnversion from kelvn to celsius
+        result = kelvin_to_celsius(input_temp); //call func kelving_to_celsius to perform the cnversion from kelvn to celsius
         in_celsius = result;
     } else if (from == 'K' && to == 'F') {
-        result = k_to_f(input_temp); //call func k_to_f to perform the cnversion from kelvn to farenheit
-        in_celsius = k_to_c(input_temp); //convert to celsius 
+        result = kelvin_to_fahrenheit(input_temp); //call func kelvin_to_farenheit to perform the cnversion from kelvn to farenheit
+        in_celsius = kelvin_to_celsius(input_temp); //convert to celsius 
     } else {
         printf("Invalid input. Use C, F, or K for temperature scales.\n");
         return 1; //exit the prgo with the error 

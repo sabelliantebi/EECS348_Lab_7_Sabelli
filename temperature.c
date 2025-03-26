@@ -1,27 +1,27 @@
 #include <stdio.h>
 #include "temperature.h"
 
-float c_to_f(float c) { //convert celsius to fahrenheit
+float celsius_to_fahrenheit(float c) { //convert celsius to fahrenheit
     return (c * 9.0 / 5.0) + 32.0;
 }
 
-float f_to_c(float f) { //convert fahrenheit to celsius
+float fahrenheit_to_celsius(float f) { //convert fahrenheit to celsius
     return (f - 32.0) * 5.0 / 9.0;
 }
 
-float c_to_k(float c) { //convert celsius to kelvin
+float celsius_to_kelvin(float c) { //convert celsius to kelvin
     return c + 273.15;
 }
 
-float k_to_c(float k) { //convert kelvin to celsius
+float kelvin_to_celsius(float k) { //convert kelvin to celsius
     return k - 273.15;
 }
 
-float f_to_k(float f) { //convert fahrenheit to kelvin
+float fahrenheit_to_kelvin(float f) { //convert fahrenheit to kelvin
     return (f - 32.0) * 5.0 / 9.0 + 273.15;
 }
 
-float k_to_f(float k) { //convert felvin to fahrenheit
+float kelvin_to_fahrenheit(float k) { //convert kelvin to fahrenheit
     return (k - 273.15) * 9.0 / 5.0 + 32.0;
 }
 

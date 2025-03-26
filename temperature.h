@@ -3,12 +3,12 @@
 
 //declare all the functions used in temperature.c so they can be called and work correcly
 
-float c_to_f(float c);
-float f_to_c(float f);
-float c_to_k(float c);
-float k_to_c(float k);
-float f_to_k(float f);
-float k_to_f(float k);
+float celsius_to_fahrenheit(float c);
+float fahrenheit_to_celsius(float f);
+float celsius_to_kelvin(float c);
+float kelvin_to_celsius(float k);
+float fahrenheit_to_kelvin(float f);
+float kelvin_to_fahrenheit(float k);
 void categorize_temp(float celsius);
 
 #endif
